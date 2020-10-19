@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <xsd:element name="Fandango">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element name="Title" type="xsd:string" />
+            <xsd:element name="Date" type="xsd:string" minOccurs="0" />
+            <xsd:element name="Location" type="xsd:string" minOccurs="0" />
+            <xsd:element name="Theater" maxOccurs="unbounded">
+               <xsd:complexType>
+                  <xsd:sequence>
+                     <xsd:element name="TheaterName" type="xsd:string" />
+                     <xsd:element name="Address" type="xsd:string" />
+                     <xsd:element name="Movies">
+                        <xsd:complexType>
+                           <xsd:sequence>
+                              <xsd:element name="Movie" maxOccurs="unbounded">
+                                 <xsd:complexType>
+                                    <xsd:sequence>
+                                       <xsd:element name="MovieName" type="xsd:string" />
+                                       <xsd:element name="ShowTime" maxOccurs="unbounded">
+                                          <xsd:complexType mixed="true">
+                                             <xsd:attribute name="type" use="required">
+                                                <xsd:simpleType>
+                                                   <xsd:restriction base="xsd:string">
+                                                      <xsd:enumeration value="morning" />
+                                                      <xsd:enumeration value="afternoon" />
+                                                      <xsd:enumeration value="evening" />
+                                                      <xsd:enumeration value="night" />
+                                                   </xsd:restriction>
+                                                </xsd:simpleType>
+                                             </xsd:attribute>
+                                          </xsd:complexType>
+                                       </xsd:element>
+                                    </xsd:sequence>
+                                 </xsd:complexType>
+                              </xsd:element>
+                           </xsd:sequence>
+                        </xsd:complexType>
+                     </xsd:element>
+                  </xsd:sequence>
+                  <xsd:attribute type="xsd:int" name="id" use="required" />
+               </xsd:complexType>
+            </xsd:element>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+</xsd:schema>

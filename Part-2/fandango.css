@@ -1,0 +1,90 @@
+Fandango{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: sans-serif;
+    background-color: gold;
+	  font-family: Arial, sans-serif;
+    color: #000000;
+    font-size:35px;
+	  margin: 20px;
+  }
+  Date{
+
+    font-size: 20px;
+    font-weight: bold;
+  }
+  Location{
+    font-size: 20px;
+    font-weight: bold;
+    color:darkgreen;
+  }
+
+  TheaterName{
+    font-size: 20px;
+    font-weight: bold;
+    color:blue;
+  }
+  
+  Address{
+    font-size: 20px;
+    font-weight: bold;
+    color:red;
+  }
+
+  TheaterName::before  {
+    content: "\A";
+      white-space: pre;
+  }
+
+  Address::before   {
+    content: "\A";
+    white-space: pre;
+ }
+
+  Title {
+    font-weight: bold;
+    color: black;
+    background-color:red;
+    display: block;
+    border: 2px orangered    dashed;
+    width: 50%;
+    text-align: start;
+  }
+  
+  Date::after{
+    content: "\A";
+      white-space: pre;
+  }
+
+  Location::after{
+    content: "\A";
+      white-space: pre;
+  }
+
+  Movies { display: flex; }
+  Movie {
+    display: inline-flexbox;
+    border: solid 1px;
+    color: darkblue;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+  
+  }
+  MovieName {
+    font-weight: bold;
+    color: gray;
+    background-color: aqua;
+    display: block;
+    border: 3px blue dotted;
+    text-align: center;
+  }
+
+
+  MovieName::after {
+    content: "\A";
+      white-space: pre;
+  }
+
+  ShowTime {
+   font-size: 18px;
+  }

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="fandango.css"?>
+<!DOCTYPE Fandango SYSTEM "fandango.dtd">
+<Fandango>
+  <Title>Fandango</Title>
+  <Date>9/26/2018</Date>
+  <Location>Rochester</Location>
+  <Theater id ="1">
+    <TheaterName>Movies 10</TheaterName>
+    <Address>2613 West Henrietta Road, Rochester, NY  14623</Address>
+    <Movies>
+      <Movie>
+        <MovieName>The Equalizer 2</MovieName>
+        <ShowTime type="afternoon">2:15p</ShowTime>
+        <ShowTime type="evening">4:55p</ShowTime>
+        <ShowTime type="evening">7:30p</ShowTime>
+      </Movie>
+      <Movie>
+        <MovieName>Incredibles 2</MovieName>
+        <ShowTime type="afternoon">12:00p</ShowTime>
+        <ShowTime type="afternoon">2:45p</ShowTime>
+        <ShowTime type="evening">5:30p</ShowTime>
+        <ShowTime type="evening">8:15p</ShowTime>
+      </Movie>
+      <Movie>
+        <MovieName>Ocean's 8</MovieName>
+        <ShowTime type="afternoon">1:30p</ShowTime>
+        <ShowTime type="evening">4:10p</ShowTime>
+      </Movie>
+    </Movies>
+  </Theater>
+  <Theater id ="2">
+    <TheaterName>Regal Greece Ridge Stadium 12</TheaterName>
+    <Address>176 Greece Ridge Center Dr, Rochester, NY  14626</Address>
+    <Movies>
+      <Movie>
+        <MovieName>A Simple Favor</MovieName>
+        <ShowTime type="afternoon">1:25p</ShowTime>
+        <ShowTime type="evening"> 4:10p</ShowTime>
+        <ShowTime type="evening">7:15p</ShowTime>
+        <ShowTime type="night">10:15p</ShowTime>
+      </Movie>
+      <Movie>
+        <MovieName>White Boy Rick</MovieName>
+        <ShowTime type="afternoon">1:15p</ShowTime>
+        <ShowTime type="afternoon">3:55p</ShowTime>
+        <ShowTime type="evening">6:45p</ShowTime>
+        <ShowTime type="night">9:30p</ShowTime>
+      </Movie>
+      <Movie>
+        <MovieName>Crazy Rich Asians</MovieName>
+        <ShowTime type="afternoon">3:45p</ShowTime>
+        <ShowTime type="afternoon">6:30p</ShowTime>
+        <ShowTime type="night">9:15p</ShowTime>
+      </Movie>
+    </Movies>
+  </Theater>
+</Fandango>

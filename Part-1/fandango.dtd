@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Fandango (Title,Date,Location,Theater+)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT Location (#PCDATA)>
+<!ELEMENT Theater (TheaterName, Address, Movies+)>
+<!ATTLIST Theater id CDATA #REQUIRED> 
+<!ELEMENT TheaterName (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Movies (Movie+)>
+<!ELEMENT Movie (MovieName, ShowTime+)>
+<!ELEMENT MovieName (#PCDATA)>
+<!ELEMENT ShowTime (#PCDATA)>
+<!ATTLIST ShowTime type (morning | afternoon | evening | night) #REQUIRED>
